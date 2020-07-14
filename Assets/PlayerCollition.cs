@@ -15,5 +15,11 @@ public class PlayerCollition : MonoBehaviour
             Move.enabled = false;
 
         }
+        if (CollisionInfo.collider.tag == "Finish")
+        {
+            Debug.Log("Ganaste c:");
+            Move.enabled = false;
+
+        }
     }
 }

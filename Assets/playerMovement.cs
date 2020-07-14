@@ -10,6 +10,7 @@ public class playerMovement : MonoBehaviour
     public Rigidbody rb;
     public float forwardForce;
     public float SidewaysForce;
+    public float UpForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class playerMovement : MonoBehaviour
         //nice :3
         forwardForce = -400f;
         SidewaysForce = 4500f;
+        UpForce = 2f;
     }
 
     // Update is called once per frame
@@ -30,6 +32,10 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKey("a"))
         {
             rb.AddForce(SidewaysForce * Time.deltaTime, 0, 0);
+        }
+        if (Input.GetKey("w"))
+        {
+            rb.AddForce(0, SidewaysForce * Time.deltaTime, 0);
         }
 
     }
