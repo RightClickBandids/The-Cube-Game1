@@ -530,6 +530,7 @@ MonoBehaviour:
   rb: {fileID: 300332388}
   forwardForce: 0
   SidewaysForce: 0
+  UpForce: 0
 --- !u!65 &300332384
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1237,7 +1238,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d480bc49a5aeff64298d3aa5cfe4b9d0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d480bc49a5aeff64298d3aa5cfe4b9d0,
         type: 3}
@@ -1247,7 +1248,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d480bc49a5aeff64298d3aa5cfe4b9d0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.002304
+      value: 28.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d480bc49a5aeff64298d3aa5cfe4b9d0,
         type: 3}
@@ -1366,6 +1367,7 @@ MonoBehaviour:
   rb: {fileID: 1292482398}
   forwardForce: 0
   SidewaysForce: 0
+  UpForce: 0
 --- !u!64 &1292482400
 MeshCollider:
   m_ObjectHideFlags: 0

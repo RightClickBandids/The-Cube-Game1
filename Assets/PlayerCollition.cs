@@ -11,13 +11,13 @@ public class PlayerCollition : MonoBehaviour
         
         if (CollisionInfo.collider.tag == "Obstacles")
         {
-            Debug.Log("PERDISTE :c");
+            Debug.Log("PERDISTE :c ");
             Move.enabled = false;
 
         }
         if (CollisionInfo.collider.tag == "Finish")
         {
-            Debug.Log("Ganaste c:");
+            Debug.Log("Ganaste c: ");
             Move.enabled = false;
 
         }

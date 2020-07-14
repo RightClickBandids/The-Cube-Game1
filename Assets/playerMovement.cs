@@ -18,7 +18,7 @@ public class playerMovement : MonoBehaviour
         //nice :3
         forwardForce = -400f;
         SidewaysForce = 4500f;
-        UpForce = 2f;
+        UpForce = 0f;
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class playerMovement : MonoBehaviour
         }
         if (Input.GetKey("w"))
         {
-            rb.AddForce(0, SidewaysForce * Time.deltaTime, 0);
+            rb.AddForce(0, UpForce * Time.deltaTime, 0);
         }
 
     }
