@@ -16,8 +16,8 @@ public class playerMovement : MonoBehaviour
     {
 
         //nice :3
-        forwardForce = -400f;
-        SidewaysForce = 4500f;
+        forwardForce = -350f;
+        SidewaysForce = 3000f;
         UpForce = 0f;
     }
 
