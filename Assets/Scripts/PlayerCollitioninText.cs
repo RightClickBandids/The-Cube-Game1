@@ -1,30 +1,48 @@
-﻿using System.Globalization;
+﻿
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerCollitioninText : MonoBehaviour
 {
-    
+
     public Text score;
+    public GameObject text;
+    public object _PlayerCollition;
+    public Color red;
+    public Color green;
 
-void OnCollisionEnter(Collision CollisionInfo)
-{
 
-    //What happens if collision with player
 
-    if (CollisionInfo.collider.tag == "Obstacles")
+    void OnCollisionEnter(Collision CollisionInfo)
     {
-        
-        
-        score.enabled = false;
+        red.a = 255;
+        red.r = 128;
+        red.g = 0;
+        red.b = 0;
 
-    }
-    if (CollisionInfo.collider.tag == "Finish")
-    {
-        
-       
-        score.enabled = false;
 
+        green.a = 255;
+        green.r = 0;
+        green.g = 200;
+        green.b = 0;
+
+
+        //What happens if collision with player
+
+        if (CollisionInfo.collider.tag == "Obstacles")
+        {
+            
+            score.color = red;
+            //Debug.Log("yesssss");
+        }
+        if (CollisionInfo.collider.tag == "Finish")
+        {
+
+            
+            score.color = green;
+
+        }
     }
 }
-}
+
