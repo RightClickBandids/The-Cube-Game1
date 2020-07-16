@@ -7,6 +7,7 @@ public class Ball_Script : MonoBehaviour
 {
     public Rigidbody rb;
     // Start is called before the first frame update
+    //test
     void Start()
     {
         rb.useGravity = false;

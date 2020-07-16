@@ -15,15 +15,16 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
 
-        //nice :3
-        forwardForce = -350f;
-        SidewaysForce = 3000f;
+        //Speeds
+        forwardForce = -380f;
+        SidewaysForce = 2500f;
         UpForce = 0f;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        //Application of speeds
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
         if ( Input.GetKey("d"))
         {
