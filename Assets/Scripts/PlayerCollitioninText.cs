@@ -32,9 +32,10 @@ public class PlayerCollitioninText : MonoBehaviour
 
         if (CollisionInfo.collider.tag == "Obstacles")
         {
-            
-            score.color = red;
-            //Debug.Log("yesssss");
+           
+                score.color = red;
+                Debug.Log("yesssss");
+         
         }
         if (CollisionInfo.collider.tag == "Finish")
         {

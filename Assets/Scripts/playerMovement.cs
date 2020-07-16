@@ -18,7 +18,7 @@ public class playerMovement : MonoBehaviour
         //Speeds
         forwardForce = -380f;
         SidewaysForce = 2000f;
-        UpForce = 0f;
+        UpForce = 3000f;
     }
 
     // Update is called once per frame
@@ -38,6 +38,12 @@ public class playerMovement : MonoBehaviour
         {
             rb.AddForce(0, UpForce * Time.deltaTime, 0);
         }
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+
+        }
+
 
     }
 }
