@@ -16,7 +16,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //Code to move camera to player
         transform.position = player.position + offset;
     }
 }

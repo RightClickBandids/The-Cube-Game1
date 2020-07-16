@@ -8,6 +8,8 @@ public class PlayerCollition : MonoBehaviour
    
    void OnCollisionEnter(Collision CollisionInfo)
     {
+
+        //What happens if collision with player
         
         if (CollisionInfo.collider.tag == "Obstacles")
         {
