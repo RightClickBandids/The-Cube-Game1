@@ -8,7 +8,7 @@ public class EndTrigger : MonoBehaviour
     {
 
         gameManager.CompleteLevel();
-        Debug.Log("mmm");
+        //Debug.Log("mmm");
 
     }
 
