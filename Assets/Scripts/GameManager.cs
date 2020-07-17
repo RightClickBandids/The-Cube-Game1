@@ -18,10 +18,12 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public GameObject CompleteLevelUI;
+
     public void CompleteLevel()
     {
 
-        Debug.Log("winning");
+        CompleteLevelUI.SetActive(true);
 
     }
     void Restart()

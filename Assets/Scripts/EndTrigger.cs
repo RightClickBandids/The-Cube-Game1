@@ -3,10 +3,12 @@
 public class EndTrigger : MonoBehaviour
 {
     public GameManager gameManager;
-    void OnCollisionEnter()
+    public float EndingDelay = 1f;
+    public void OnCollisionEnter()
     {
 
         gameManager.CompleteLevel();
+        Debug.Log("mmm");
 
     }
 

@@ -18,6 +18,7 @@ public class playerMovement : MonoBehaviour
         //Speeds
         forwardForce = -380f;
         SidewaysForce = 2000f;
+        UpForce = 0f;
         UpForce = 3000f;
     }
 

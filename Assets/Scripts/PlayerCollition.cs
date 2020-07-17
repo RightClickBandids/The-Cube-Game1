@@ -17,7 +17,7 @@ public class PlayerCollition : MonoBehaviour
         
         if (CollisionInfo.collider.tag == "Obstacles")
         {
-            Debug.Log("PERDISTE :c ");
+            
             Move.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
             
@@ -26,7 +26,7 @@ public class PlayerCollition : MonoBehaviour
         }
         if (CollisionInfo.collider.tag == "Finish")
         {
-            Debug.Log("Ganaste c:");
+            
             Move.enabled = false;
             
 
