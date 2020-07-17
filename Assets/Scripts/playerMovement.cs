@@ -23,7 +23,7 @@ public class playerMovement : MonoBehaviour
         forwardForce = -380f;
         SidewaysForce = 2000f;
         UpForce = 0f;
-        //UpForce = 3000f;
+        UpForce = 3000f;
         red.a = 255;
         red.r = 128;
         red.g = 0;
