@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PlayerCollition : MonoBehaviour
 {
     public playerMovement Move;
+    public GameObject GameManager;
     
    
    void OnCollisionEnter(Collision CollisionInfo)
@@ -16,14 +17,16 @@ public class PlayerCollition : MonoBehaviour
         
         if (CollisionInfo.collider.tag == "Obstacles")
         {
-            Debug.Log("PERDISTE :c ");
-            Move.enabled = false;
             
+            Move.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
+            
+
 
         }
         if (CollisionInfo.collider.tag == "Finish")
         {
-            Debug.Log("Ganaste c:");
+            
             Move.enabled = false;
             
 
