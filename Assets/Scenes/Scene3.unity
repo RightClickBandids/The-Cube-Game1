@@ -662,6 +662,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6131274880062641608, guid: 90465b9fd9a7f4016a85d92b2297f0c2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
+      objectReference: {fileID: 0}
     - target: {fileID: -207610898036096603, guid: 90465b9fd9a7f4016a85d92b2297f0c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -692,6 +697,26 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768361545}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 189774765763880218, guid: 90465b9fd9a7f4016a85d92b2297f0c2, type: 3}
+--- !u!1 &768361547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6131274880062641608, guid: 90465b9fd9a7f4016a85d92b2297f0c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 768361544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &768361548
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768361547}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
