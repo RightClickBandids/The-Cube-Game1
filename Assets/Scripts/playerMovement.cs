@@ -29,7 +29,7 @@ public class playerMovement : MonoBehaviour
         red.g = 0;
         red.b = 0;
         int sum = gameManager.By2(3,3);
-        Debug.Log(sum);
+        //Debug.Log(sum);
 
        
     }
@@ -58,7 +58,7 @@ public class playerMovement : MonoBehaviour
 
         }
 
-
+        
     }
 
 
