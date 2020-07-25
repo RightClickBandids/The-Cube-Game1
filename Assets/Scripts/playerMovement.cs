@@ -12,6 +12,8 @@ public class playerMovement : MonoBehaviour
     public float forwardForce;
     public float SidewaysForce;
     public float UpForce;
+    public float maxSpeed;
+    public float minSpeed;
     public Text score;
     public Color red;
     
@@ -20,20 +22,22 @@ public class playerMovement : MonoBehaviour
     {
 
         //Speeds
-        forwardForce = -380f;
+        forwardForce = -400f;
         SidewaysForce = 2000f;
         UpForce = 0f;
         UpForce = 3000f;
+        maxSpeed = 2000f;
+        minSpeed = 2000f;
         red.a = 255;
         red.r = 128;
         red.g = 0;
         red.b = 0;
-        int sum = gameManager.By2(3,3);
+        //int sum = gameManager.By2(3,3);
         //Debug.Log(sum);
 
        
     }
-
+    void Update (){}
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -55,9 +59,13 @@ public class playerMovement : MonoBehaviour
         {
             score.color = red;
             FindObjectOfType<GameManager>().EndGame();
-
+            
         }
-
+        //Limiting acceletarion
+            rb.velocity = new Vector3
+            (Mathf.Clamp(rb.velocity.x,-maxSpeed, maxSpeed),
+             Mathf.Clamp(rb.velocity.y,-maxSpeed, maxSpeed), 
+             Mathf.Clamp(rb.velocity.z,-maxSpeed, maxSpeed));
         
     }
 

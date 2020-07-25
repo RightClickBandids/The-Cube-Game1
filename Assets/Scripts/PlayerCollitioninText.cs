@@ -34,7 +34,7 @@ public class PlayerCollitioninText : MonoBehaviour
         {
            
                 score.color = red;
-                Debug.Log("yesssss");
+                //Debug.Log("yesssss");
          
         }
         if (CollisionInfo.collider.tag == "Finish")
