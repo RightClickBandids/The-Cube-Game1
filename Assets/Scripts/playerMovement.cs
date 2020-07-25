@@ -12,8 +12,7 @@ public class playerMovement : MonoBehaviour
     public float forwardForce;
     public float SidewaysForce;
     public float UpForce;
-    public float maxSpeed;
-    public float minSpeed;
+    public float maxFowardSpeed;
     public Text score;
     public Color red;
     
@@ -23,11 +22,11 @@ public class playerMovement : MonoBehaviour
 
         //Speeds
         forwardForce = -400f;
+        maxFowardSpeed = 20f; //max foward speed
         SidewaysForce = 2000f;
         UpForce = 0f;
         UpForce = 3000f;
-        maxSpeed = 2000f;
-        minSpeed = 2000f;
+        
         red.a = 255;
         red.r = 128;
         red.g = 0;
@@ -63,9 +62,9 @@ public class playerMovement : MonoBehaviour
         }
         //Limiting acceletarion
             rb.velocity = new Vector3
-            (Mathf.Clamp(rb.velocity.x,-maxSpeed, maxSpeed),
-             Mathf.Clamp(rb.velocity.y,-maxSpeed, maxSpeed), 
-             Mathf.Clamp(rb.velocity.z,-maxSpeed, maxSpeed));
+            (Mathf.Clamp(rb.velocity.x,-maxFowardSpeed, maxFowardSpeed),
+             Mathf.Clamp(rb.velocity.y,-maxFowardSpeed, maxFowardSpeed), 
+             Mathf.Clamp(rb.velocity.z,-maxFowardSpeed, maxFowardSpeed));
         
     }
 
