@@ -1,6 +1,6 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using System;
 
 public class GameManager : MonoBehaviour {
     bool gameHasEnded = false;
@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour {
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
-        //Debug.Log("Gameover");
-            
+            //Debug.Log("Gameover");
+
             Invoke("Restart", RestartDelay);
         }
     }
@@ -31,5 +31,15 @@ public class GameManager : MonoBehaviour {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
+    }
+
+    
+
+  public int By2 (int num1, int num2)
+    {
+        
+           
+            return (num1 *num2);
+        
     }
 }
