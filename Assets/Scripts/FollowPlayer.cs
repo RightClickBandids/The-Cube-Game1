@@ -7,7 +7,7 @@ public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
     public int offsetZ;
-    public Vector3 offsetV3;
+    public  Vector3 offsetV3;
     Vector3 mCamera = new Vector3 (0,5,0);
     // Start is called before the first frame update
     void Start()
