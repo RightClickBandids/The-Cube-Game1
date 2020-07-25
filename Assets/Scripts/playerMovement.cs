@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using UnityEngine;
@@ -8,6 +7,7 @@ using UnityEngine.UI;
 
 public class playerMovement : MonoBehaviour
 {
+    GameManager gameManager = new GameManager();
     public Rigidbody rb;
     public float forwardForce;
     public float SidewaysForce;
@@ -28,6 +28,10 @@ public class playerMovement : MonoBehaviour
         red.r = 128;
         red.g = 0;
         red.b = 0;
+        int sum = gameManager.By2(3,3);
+        Debug.Log(sum);
+
+       
     }
 
     // Update is called once per frame
@@ -56,4 +60,6 @@ public class playerMovement : MonoBehaviour
 
 
     }
+
+
 }
