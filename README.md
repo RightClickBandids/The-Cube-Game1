@@ -1,2 +1,3 @@
-# A red cube
+# SynthWave Sphere
 
+A eternal game of a sphere
