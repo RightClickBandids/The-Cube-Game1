@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Score : MonoBehaviour
 {
     public Transform player;
     public Text Scoretext;
-    public float Scoremultiplier;
+    public float scoremultiplier;
+    public float scoreAmount;
+    public float pointsIncreasedPerSecond;
 
     void Start()
     {
         //Multiplier of score
-        Scoremultiplier = 3.696f;
+        scoreAmount = 0f;
+        pointsIncreasedPerSecond = 40f;
     }
 
    //Score based on position
@@ -19,7 +23,8 @@ public class Score : MonoBehaviour
 
         //Debug.Log(player.position.z - 28.4);
 
-        Scoretext.text = (Scoremultiplier * (-player.position.z + 28.4)).ToString("0");
+        Scoretext.text = Convert.ToString((int)scoreAmount);
+        scoreAmount += pointsIncreasedPerSecond * Time.deltaTime;
       
      }
 }

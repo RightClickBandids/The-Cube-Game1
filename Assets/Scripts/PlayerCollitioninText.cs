@@ -1,5 +1,6 @@
 ﻿
 using System;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,10 @@ public class PlayerCollitioninText : MonoBehaviour
     public object _PlayerCollition;
     public Color red;
     public Color green;
+    public GameObject ObjectwithScript;
+
+
+
 
 
 
@@ -27,6 +32,7 @@ public class PlayerCollitioninText : MonoBehaviour
         green.g = 200;
         green.b = 0;
 
+        
 
         //What happens if collision with player
 
@@ -34,8 +40,9 @@ public class PlayerCollitioninText : MonoBehaviour
         {
            
                 score.color = red;
-                Debug.Log("yesssss");
-         
+            ObjectwithScript.GetComponent <Score> ().enabled = false;
+            //Debug.Log("yesssss");
+
         }
         if (CollisionInfo.collider.tag == "Finish")
         {
